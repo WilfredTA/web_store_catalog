@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="reset.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Web Store</title>
+	<style>
+
+	/* General Elements */
+		figure {
+			padding: 0;
+			margin: 0;
+		}
+
+
+		body {
+			background-color: #ffd505;
+			margin: 0;
+			display: grid;
+			grid-gap: 30px;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto auto;
+			font-family: Helvetica, sans-serif;
+		}
+
+		 main, header {
+			padding-left: 23px;
+		}
+
+	/* Header Grid */
+
+		header {
+			box-sizing: border-box;
+			width: 91.8%;
+			color: #ffffff;
+			justify-self: center;
+			grid-row: 1 / 2;
+			grid-column: 1 / 2;
+			background-color: #047ec1;
+			border-bottom-right-radius: 20px;
+			border-bottom-left-radius: 20px;
+		}
+
+	/* Main Grid */
+		main {
+			background-color: #ececec;
+			box-sizing: border-box;
+			justify-self: center;
+			width: 91.8%;
+			padding-bottom: 6%;
+
+			
+			display: grid;
+			grid-template-columns: 22.22fr 22.22fr 22.22fr 22.22fr;
+			grid-template-rows: auto auto;
+			margin-bottom: 40px;
+		}
+
+	/* First order components of main grid */
+		main h1 {
+			grid-column: 1 / -1;
+		}
+
+		figure {
+			box-sizing: border-box;
+			display: grid;
+			margin: 0 10px;
+			margin-top: 2.2vw;
+			height: 240px;
+			max-width: 200px;
+			background-color: #ffffff;
+
+			grid-template-columns: 1fr;
+			grid-template-rows: auto auto;
+		}
+
+		figure:nth-of-type(4n) {
+			margin-right: 23px;
+		}
+
+	/* Second order components of main grid */
+		img {
+			justify-self: center;
+			max-height: 157px;
+			max-width: 90%;
+			padding-top: 18px;
+			padding-bottom: 10.4%;	
+		}
+
+		figcaption, figure p{
+			line-height: 0.5rem;
+			padding-left: 13px;
+		}
+
+		figcaption {
+			font-weight: bold;
+		}
+
+		figure p {
+			font-weight: lighter;
+			font-size: .8rem;
+		}
+
+	/* On click action */
+		input[type="checkbox"] {
+			display: none;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<h1 class="site-header"> Paramiicio </h1>
+	</header>
+	<main>
+		<h1> All Products </h1>
+	<label>
+		<input type="checkbox" />
+		<figure>
+			<img src="images/aurelia.jpg" />
+			<figcaption>Aurelia</figcaption>
+			<p>$12.99</p>
+		</figure>
+		<div class="aure">
+		</div>
+	</label>
+	<label>
+		<input type="checkbox" />
+		<figure>
+			<img src="images/chlorelligerum.jpg" />
+			<figcaption>Chlorelligerum</figcaption>
+			<p>$12.99</p>
+		</figure>
+	</label>
+	<label>
+		<input type="checkbox" />
+		<figure>
+			<img src="images/polycaryum.jpg" />
+			<figcaption>Polycaryum</figcaption>
+			<p>$12.99</p>
+		</figure>
+	</label>
+	<label>
+		<input type="checkbox" />
+		<figure>
+			<img src="images/sonneborni.jpg" />
+			<figcaption>Sonneborni</figcaption>
+			<p>$12.99</p>
+		</figure>
+	</label>
+	<label>
+		<input type="checkbox" />
+		<figure>
+			<img src="images/ugandae.jpg" />
+			<figcaption>Ugandae</figcaption>
+			<p>$12.99</p>
+		</figure>
+	</label>
+	<label>
+		<input type="checkbox" />
+		<figure>
+			<img src="images/woodruffi.jpg" />
+			<figcaption>Woodruffi</figcaption>
+			<p>$12.99</p>
+		</figure>
+	</label>
+			
+	</main>
+
+
+</body>
+</html>
